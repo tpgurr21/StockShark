@@ -1,0 +1,57 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  /* Breakpoints (Tailwind v4 uses CSS variables for theming) */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1020px;
+  --breakpoint-xl: 1440px;
+
+  /* Colors */
+  --color-lightBlue: hsl(215.02, 98.39%, 51.18%);
+  --color-darkBlue: hsl(213.86, 58.82%, 46.67%);
+  --color-lightGreen: hsl(156.62, 73.33%, 58.82%);
+
+  /* Font */
+  --font-sans: "Poppins", sans-serif;
+
+  /* Spacing */
+  --spacing-180: 32rem;
+}
+
+/** @type {import('tailwindcss').Config} */
+/* @import "tailwindcss"; */
+
+/* @theme { */
+	/* screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "1020px",
+      xl: "1440px",
+    }, */
+	/* --breakpoint-*: initial;
+	--breakpoint-sm: 480px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1020px;
+	--breakpoint-xl: 1440px;
+	--color-lightBlue: hsl(215.02, 98.39%, 51.18%);
+	--color-darkBlue: hsl(213.86, 58.82%, 46.67%);
+	--color-lightGreen: hsl(156.62, 73.33%, 58.82%);
+	--font-sans: "Poppins", sans-serif;
+	--spacing-180: 32rem; */
+	/* extend: {
+      colors: {
+        lightBlue: "hsl(215.02, 98.39%, 51.18%)",
+        darkBlue: "hsl(213.86, 58.82%, 46.67%)",
+        lightGreen: "hsl(156.62, 73.33%, 58.82%)",
+      }, */
+	/* fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+      }, */
+	/* spacing: {
+        180: "32rem",
+      },
+    }, */
+/* } */
