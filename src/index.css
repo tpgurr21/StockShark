@@ -1,37 +1,38 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  /* Breakpoints (Tailwind v4 uses CSS variables for theming) */
-  --breakpoint-sm: 480px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1020px;
-  --breakpoint-xl: 1440px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap");
 
-  /* Colors */
-  --color-lightBlue: hsl(215.02, 98.39%, 51.18%);
-  --color-darkBlue: hsl(213.86, 58.82%, 46.67%);
-  --color-lightGreen: hsl(156.62, 73.33%, 58.82%);
+/* Define custom theme variables */
+/* @theme { */
+  /* --font-sans: "Poppins", sans-serif; */
 
-  /* Font */
-  --font-sans: "Poppins", sans-serif;
+	/* Breakpoints (Tailwind v4 uses CSS variables for theming)
+	--breakpoint-sm: 480px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1020px;
+	--breakpoint-xl: 1440px;
 
-  /* Spacing */
-  --spacing-180: 32rem;
-}
+	/* Colors */
+	/* --color-lightBlue: hsl(215.02, 98.39%, 51.18%);
+	--color-darkBlue: hsl(213.86, 58.82%, 46.67%);
+	--color-lightGreen: hsl(156.62, 73.33%, 58.82%); */
+
+	/* Spacing */
+	/* --spacing-180: 32rem; */
 
 /** @type {import('tailwindcss').Config} */
 /* @import "tailwindcss"; */
 
 /* @theme { */
-	/* screens: {
+/* screens: {
       sm: "480px",
       md: "768px",
       lg: "1020px",
       xl: "1440px",
     }, */
-	/* --breakpoint-*: initial;
+/* --breakpoint-*: initial;
 	--breakpoint-sm: 480px;
 	--breakpoint-md: 768px;
 	--breakpoint-lg: 1020px;
@@ -41,16 +42,16 @@
 	--color-lightGreen: hsl(156.62, 73.33%, 58.82%);
 	--font-sans: "Poppins", sans-serif;
 	--spacing-180: 32rem; */
-	/* extend: {
+/* extend: {
       colors: {
         lightBlue: "hsl(215.02, 98.39%, 51.18%)",
         darkBlue: "hsl(213.86, 58.82%, 46.67%)",
         lightGreen: "hsl(156.62, 73.33%, 58.82%)",
       }, */
-	/* fontFamily: {
+/* fontFamily: {
         sans: ["Poppins", "sans-serif"],
       }, */
-	/* spacing: {
+/* spacing: {
         180: "32rem",
       },
     }, */
