@@ -5,7 +5,7 @@ import CompanyPage from "../Pages/CompanyPage/CompanyPage";
 import HomePage from "../Pages/HomePage/HomePage";
 import CompanyProfile from "../Components/CompanyProfile/CompanyProfile";
 import IncomeStatement from "../Components/IncomeStatement/IncomeStatement";
-import DesignPage from "../Pages/DesignPage/DesignPage";
+import DesignPage from "../Pages/DesignGuide/DesignGuide";
 
 export const router = createBrowserRouter([
 	{
