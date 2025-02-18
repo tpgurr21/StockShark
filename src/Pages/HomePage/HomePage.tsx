@@ -1,14 +1,28 @@
-import React from 'react'
-import Hero from '../../Components/Hero/Hero'
+import React, {useEffect, useState} from "react";
+import Hero from "../../Components/Hero/Hero";
+import {houseBuilt} from "../../api";
 
 interface Props {}
 
 const HomePage = (props: Props) => {
-  return (
-    <div>
-      <Hero />
-    </div>
-  )
-}
+  const [search, setSearch] = useState<string>("");
+  console.log('test');
+	useEffect(() => {
+		console.log('test2')
+    const buildHouse = async () => {
+			const result = await houseBuilt();
+      console.log(result)
+      // return result;
+		};
 
-export default HomePage
+		buildHouse()
+   
+	},[])
+	return (
+		<div>
+			<Hero />
+		</div>
+	);
+};
+
+export default HomePage;

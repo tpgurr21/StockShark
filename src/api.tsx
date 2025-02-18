@@ -31,3 +31,16 @@ export const getCompanyProfile = async (query: string) => {
 		console.log("error message from API: ", error.message);
 	}
 };
+
+export const houseBuilt = async () => {
+	try {
+		const data = await axios.get<string>(
+			`https://localhost:7152/Program`
+		);
+		return data;
+	} catch (error: any) {
+		console.log("error message from API: ", error.message);
+	}
+};
+
+
