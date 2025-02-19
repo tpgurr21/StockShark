@@ -36,11 +36,10 @@ export const houseBuilt = async () => {
 	try {
 		const data = await axios.get<string>(
 			`https://localhost:7152/Program`
+			// `https://localhost:7152/`
 		);
 		return data;
 	} catch (error: any) {
 		console.log("error message from API: ", error.message);
 	}
 };
-
-
